@@ -9,9 +9,32 @@
 	</head>
 	<body>
 		<div class="container">
-		<button class="btn btn-danger">Sign Up</button>
-	    <form class="needs-validation" novalidate>
-			<title>Create Account</title>
+		<button class="btn btn-danger" data-toggle="modal"
+            data-target="#signupModal">Sign Up</button>
+			<div id="signupModal"
+            class="modal fade"
+            role="dialog">
+
+            <div class="modal-dialog">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+
+                    <!-- Header -->
+                    <div class="modal-header">
+						<button type="button"
+                            class="close"
+                            data-dismiss="modal">
+
+                            &times;
+
+                        </button>
+
+                        <h4 class="modal-title">
+                            Create Account
+                        </h4>
+					</div>
+			
 			<div class="col-md-4 mb-3">
 		        <label for="email"> Email address</label>
 				<input type="email" required class="form-control" placeholder=" Enter email id"email">
